@@ -3,36 +3,254 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Template HTML CSS</title>
+        <title>25 LC Form</title>
 
         <!-- CSS -->
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         
-        <!-- Inizio Header Principale -->
-        <header>
-            <div class="container">
-                HEADER
-            </div>
-        </header>
-        <!-- Fine Header Principale -->
-        
         <!-- Inizio Main -->
         <main>
-            <div class="container">
-                MAIN
-            </div>
+
+            <section>
+
+                <div class="container">
+                
+                    <h1>
+                        Form
+                    </h1>
+
+                </div>
+
+            </section>
+            
+            <section>
+
+                <div class="container">
+                
+                    <h2>
+                        Input
+                    </h2>
+
+                    <div>
+
+                        <div>
+                            <label>
+                                Nome*
+                            </label>
+                            <input value="alessio" required>
+                        </div>
+
+                        <div>
+                            <input type="text" minlength="3" maxlength="10">
+                        </div>
+
+                        <div>
+                            <input type="email" placeholder="Inserisci la tua email...">
+                        </div>
+
+                        <div>
+                            <input type="number" min="3" max="10" value="56">
+                        </div>
+
+                        <div>
+                            <input type="number" step="0.01">
+                        </div>
+
+                        <div>
+                            <input type="color">
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="chesuccede">
+                            <input type="checkbox" name="chesuccede" checked>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="domanda"> SI
+                            <input type="radio" name="domanda" checked> NO
+                        </div>
+
+                        <div>
+                            <input type="date">
+                        </div>
+
+                        <div>
+                            <input type="file" accept="application/pdf">
+                        </div>
+
+                        <div>
+                            <input type="month">
+                        </div>
+
+                        <div>
+                            <input type="password">
+                        </div>
+
+                        <div>
+                            <input type="range" step="10" min="0" max="100">
+                        </div>
+
+                        <div>
+                            <input type="time">
+                        </div>
+
+                        <div>
+                            <input type="submit">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+            
+            <section>
+
+                <div class="container">
+                
+                    <h2>
+                        Select
+                    </h2>
+
+                    <div>
+                        <select name="scelta">
+                            <option value="opt1">Opzione1</option>
+                            <option value="opt2">Opzione2</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </section>
+            
+            <section>
+
+                <div class="container">
+                
+                    <h2>
+                        Textarea
+                    </h2>
+
+                    <div>
+                        <textarea name="name" rows="5" placeholder="Inserisci il tuo messaggio..."></textarea>
+                    </div>
+
+                </div>
+
+            </section>
+            
+            <section>
+
+                <div class="container">
+                
+                    <h2>
+                        Form
+                    </h2>
+
+                    <div>
+                
+                        <h3>
+                            Registrati alla classe #114
+                        </h3>
+
+                        <form action="test.html" method="POST">
+
+                            <div>
+                                <div>
+                                    <label for="user-email">
+                                        Email*
+                                    </label>
+                                </div>
+                                <input id="user-email" name="user-email" type="email" placeholder="Inserisci la tua email..." required>
+                            </div>
+
+                            <div>
+                                <div>
+                                    <label for="user-password">
+                                        Password*
+                                    </label>
+                                </div>
+                                <input id="user-password" name="user-password" type="password" placeholder="Inserisci la tua password..." minlength="6" maxlength="16" required>
+                            </div>
+
+                            <div>
+                                <div>
+                                    <label for="user-gender">
+                                        Genere*
+                                    </label>
+                                </div>
+                                <select id="user-gender" name="user-gender">
+                                    <option disabled selected>Scegli un'opzione...</option>
+                                    <option value="f">Donna</option>
+                                    <option value="m">Uomo</option>
+                                    <option value="unknown">Preferisco non rispondere</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <div>
+                                    <label>
+                                        Film preferiti
+                                    </label>
+                                </div>
+                                <div>
+                                    <input id="film-preferito-1" name="film-preferito[]" type="checkbox" value="am-psycho">
+                                    <label for="film-preferito-1">
+                                        American Psycho
+                                    </label>
+                                </div>
+                                <div>
+                                    <input id="film-preferito-2" name="film-preferito[]" type="checkbox" value="interstellar">
+                                    <label for="film-preferito-2">
+                                        Interstellar
+                                    </label>
+                                </div>
+                                <div>
+                                    <input id="film-preferito-3" name="film-preferito[]" type="checkbox" value="fight-club">
+                                    <label for="film-preferito-3">
+                                        Fight Club
+                                    </label>
+                                </div>
+                                <div>
+                                    <input id="film-preferito-4" name="film-preferito[]" type="checkbox" value="django">
+                                    <label for="film-preferito-4">
+                                        Django
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div>
+                                <input id="terms" name="terms" type="checkbox" value="accettato" required>
+                                <label for="terms">
+                                    * Ho letto e accetto le condizioni d'utilizzo
+                                </label>
+                            </div>
+
+                            <div>
+                                <!-- Questi 2 sottomettono -->
+                                <input type="submit">
+                                <button type="submit">
+                                    Invia
+                                </button>
+
+                                <!-- Questi 2 NON sottomettono -->
+                                <input type="button" value="Invia">
+                                <button type="button">
+                                    Invia
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+
+            </section>
+
         </main>
         <!-- Fine Main -->
-        
-        <!-- Inizio Footer Principale -->
-        <footer>
-            <div class="container">
-                FOOTER
-            </div>
-        </footer>
-        <!-- Fine Footer Principale -->
 
     </body>
 </html>
